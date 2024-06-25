@@ -1,0 +1,22 @@
+<scroll-view scroll-y scroll-top="{{scrollTop}}" class="page-content page-content-bg">
+  <view class="scroll-view-content">
+    <!-- 省略其他代码 -->
+    <!-- 显示逐字效果的文本 -->
+    <view wx:if="{{displayContent}}" class="current-content">{{displayContent}}</view>
+  </view>
+</scroll-view>
+
+<view wx:if="{{loading}}" class="loading">
+
+    <image class="left" src="https://img.alicdn.com/imgextra/i3/O1CN01sffRIx1nb3dXCKdFC_!!6000000005107-2-tps-1024-1024.png" mode="aspectFill" />
+    <view class="tv_loading">Loading...</view>
+
+  
+</view>
+
+<view class="input-area">
+  <input class="input-field" value="{{inputValue}}" bindinput="onInput" placeholder="有什么问题尽管问我"/>
+  <button class="send-button" bindtap="sendMessage">发送</button>
+</view>
+
+<!-- 省略其他代码 -->
