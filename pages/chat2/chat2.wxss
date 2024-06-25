@@ -1,0 +1,106 @@
+/* 页面整体样式 */
+.page-content {
+  background-color: #f5f5f5;
+  padding: 20rpx;
+}
+
+/* 滚动视图样式 */
+.scroll-view-content {
+  padding: 20rpx 0;
+}
+.current-content {
+  width: 90%;
+  white-space: normal; /* 允许文本自动换行 */
+  word-wrap: break-word; /* 允许长单词或无法在单词间断行的文本在单词内进行换行 */
+  overflow-wrap: break-word; /* 同 word-wrap */
+}
+/* 消息容器样式 */
+.message-item {
+  margin-bottom: 20rpx;
+  padding: 10rpx;
+  background-color: #ffffff;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 消息文本样式 */
+.message-item text {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #333333;
+}
+
+/* 加载中提示样式 */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120rpx;
+  font-size: 28rpx;
+  color: #999999;
+  margin-top: 30rpx;
+}
+
+/* 加载动画图片样式 */
+.loading_img {
+
+  width: 90rpx;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.left{
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 20rpx;
+  animation: rotate 1s infinite linear; 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* 从 0 度开始旋转 */
+  }
+  to {
+    transform: rotate(360deg); /* 旋转到 360 度 */
+  }
+}
+
+
+/* 输入区域样式 */
+.input-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20rpx;
+  background-color: #ffffff;
+  border-top: 1rpx solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* 输入框样式 */
+.input-field {
+ 
+  flex: 8;
+  padding: 10rpx 20rpx;
+  font-size: 32rpx;
+  border-radius: 4rpx;
+  border: 1rpx solid #e5e5e5;
+  margin-right: 20rpx;
+}
+
+/* 发送按钮样式 */
+.send-button {
+  flex: 2;
+  padding: 10rpx 20rpx;
+  background-color: #1AAD19;
+  color: white;
+  border-radius: 4rpx;
+  font-size: 32rpx;
+}

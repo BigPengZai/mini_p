@@ -1,0 +1,37 @@
+<scroll-view scroll-y scroll-top="{{scrollTop}}" class="page-content page-content-bg">
+
+<view class="scroll-view-content">
+  <block wx:for="{{talkArr}}" wx:key="index">
+    <view class="talk-box1">
+      <view class="talk-box-question" wx:if="{{item.isAnswer=='0'}}">
+        <view class="left">
+          <text class="left-content">{{item.content}}</text>
+        </view>
+        <image class="right" src="https://p6-passport.byteacctimg.com/img/user-avatar/c2b1804b60fb058877c763a19ca3297d~80x80.awebp" mode="aspectFill" />
+      </view>
+      <view class="talk-box-reply" wx:else>
+        <image class="left" src="https://img.alicdn.com/imgextra/i3/O1CN01sffRIx1nb3dXCKdFC_!!6000000005107-2-tps-1024-1024.png" mode="aspectFill" />
+        <view class="right">
+          <view class="right-content">
+            <view wx:if="{{index != talkArr.length - 1}}">{{item.content}}</view>
+            <view wx:else>{{currentContent}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+</scroll-view>
+
+<view wx:if="{{loading}}" class="loading"> 
+<image class="loading_img" src="../../assets/loading.png" />
+</view>
+<view class="input-area" style="bottom: {{inputBottom}}rpx;">
+<input class="input-field" value="{{inputValue}}" bindinput="onInput" placeholder="请输入内容" />
+<view class="send-button2" bindtap="sendMessage">发送</view>
+</view>
+
+
+
+
+

@@ -1,0 +1,174 @@
+
+
+.page-content {
+  width: 100%;
+  margin-top: 48rpx;
+  padding-top: 150rpx;
+  height: calc(100vh - 50rpx - 100rpx); 
+  box-sizing: border-box;
+
+}
+
+.page-content-bg {
+  background: #F5F6F7;
+  padding-bottom: 18rpx;
+  overflow: scroll;
+  padding-top: 0;
+}
+
+.scroll-view-content {
+  padding-top: 50rpx;
+}
+
+.talk-box1 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.talk-box {
+  display: flex;
+}
+
+.talk-box .left {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.talk-box .right {
+  margin-left: 30rpx;
+  flex: 1;
+}
+
+.talk-item {
+  height: 92rpx;
+  background: #F6FFF9;
+  border-radius: 0rpx 20rpx 20rpx 20rpx;
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 0.9);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0 38rpx;
+}
+
+.talk-box-question,
+.talk-box-reply {
+  width: 100%;
+  display: flex;
+  margin-bottom: 32rpx;
+}
+
+.talk-box-question .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.left-content {
+  background: linear-gradient(273deg, #44BE35 0%, #6ECB63 100%);
+  box-shadow: 0rpx 2rpx 8rpx 0rpx rgba(0, 0, 0, 0.05);
+  border-radius: 24rpx 0rpx 24rpx 24rpx;
+  padding: 24rpx;
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  line-height: 44rpx;
+  text-align: left;
+}
+
+.talk-box-question .right {
+  margin-left: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.talk-box-reply .left {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.talk-box-reply .right {
+  margin-left: 30rpx;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right-content {
+  background: #FFFFFF;
+  box-shadow: 0rpx 2rpx 8rpx 0rpx rgba(0, 0, 0, 0.05);
+  border-radius: 0rpx 24rpx 24rpx 24rpx;
+  border: 2rpx solid #D3D3D3;
+  padding: 24rpx;
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 46rpx;
+  text-align: left;
+}
+.loading {
+  position: fixed; /* 使用 fixed 定位 */
+  top: 50%; /* 距离顶部50%处 */
+  left: 50%; /* 距离左侧50%处 */
+  transform: translate(-50%, -50%); /* 使用 transform 平移来实现居中 */
+  z-index: 9999; /* 确保加载动画在最上层 */
+}
+.loading_img{
+  width: 100rpx;
+  height: 100rpx;
+  animation: rotate 1s infinite linear; 
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* 从 0 度开始旋转 */
+  }
+  to {
+    transform: rotate(360deg); /* 旋转到 360 度 */
+  }
+}
+.input-area {
+  position: fixed;
+  bottom: 0; /* 这里保持为0，实际通过动态设置bottom实现调整 */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100rpx;
+  box-sizing: border-box;
+}
+
+.input-field {
+  flex-grow: 1;
+  height: 80rpx;
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  resize: none;
+}
+
+.send-button2 {
+  width: 150rpx;
+  height: 80rpx;
+  margin-left: 10rpx;
+  background-color: #6ECB63;
+  color: #fff;
+  border: none;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
